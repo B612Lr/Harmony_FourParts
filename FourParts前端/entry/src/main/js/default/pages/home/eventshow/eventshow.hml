@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="box">
+        <text class="box_title" style="background-color : #ff5844;">很重要很紧急</text>
+
+        <list class="todo-wrapper">
+            <list-item for="{{ winfo1.tasks }}" class="todo-item">
+                <text class="todo-title" value="1" onclick="Desc_show({{ $item.description }})">
+                    {{ $item.name }}</text>
+                <div class="todo-content">
+                    <text class="todo-date">截止时间：{{ $item.deadline }}</text>
+                    <dialog class="dialogClass" id="dialogId">
+                        <div class="dialogDiv">
+                            <text class="dialogtext">任务已完成？</text>
+                            <input type="button" class="dialogbtn" value="确认" onclick="confirmClick"></input>
+                        </div>
+                    </dialog>
+                    <button class="todo-button" onclick="openDialog({{ $item.id }})">完成</button>
+                </div>
+            </list-item>
+        </list>
+    </div>
+
+    <div class="box">
+        <text class="box_title" style="background-color : #a6d3f2;">很重要不紧急</text>
+        <list class="todo-wrapper">
+            <list-item for="{{ winfo2.tasks }}" class="todo-item">
+                <text class="todo-title" value="2" onclick="Desc_show({{ $item.description }})">{{ $item.name }}</text>
+                <div class="todo-content">
+                    <text class="todo-date">{{ $item.deadline }}</text>
+                    <dialog class="dialogClass" id="dialogId">
+                        <div class="dialogDiv">
+                            <text class="dialogtext">任务已完成？</text>
+                            <input type="button" class="dialogbtn" value="确认" onclick="confirmClick"></input>
+                        </div>
+                    </dialog>
+                    <button class="todo-button" onclick="openDialog({{ $item.id }})">完成</button>
+                </div>
+            </list-item>
+        </list>
+    </div>
+    <div class="box">
+        <text class="box_title" style="background-color : #f7d78c;">不重要很紧急</text>
+        <list class="todo-wrapper">
+            <list-item for="{{ winfo3.tasks }}" class="todo-item">
+                <text class="todo-title" value="3" onclick="Desc_show({{ $item.description }})">{{
+                    $item.name }}</text>
+                <div class="todo-content">
+                    <text class="todo-date">{{ $item.deadline }}</text>
+                    <dialog class="dialogClass" id="dialogId">
+                        <div class="dialogDiv">
+                            <text class="dialogtext">任务已完成？</text>
+                            <input type="button" class="dialogbtn" value="确认" onclick="confirmClick"></input>
+                        </div>
+                    </dialog>
+                    <button class="todo-button" onclick="openDialog({{ $item.id }})">完成</button>
+                </div>
+            </list-item>
+        </list>
+    </div>
+    <div class="box">
+        <text class="box_title" style="background-color : #afc3ab">不重要不紧急</text>
+        <list class="todo-wrapper">
+            <list-item for="{{ winfo4.tasks }}" class="todo-item">
+                <text class="todo-title" value="4" onclick="Desc_show({{ $item.description }})">{{
+                    $item.name }}</text>
+                <div class="todo-content">
+                    <text class="todo-date">{{ $item.deadline }}</text>
+                    <dialog class="dialogClass" id="dialogId">
+                        <div class="dialogDiv">
+                            <text class="dialogtext">任务已完成？</text>
+                            <input type="button" class="dialogbtn" value="确认" onclick="confirmClick"></input>
+                        </div>
+                    </dialog>
+                    <button class="todo-button" onclick="openDialog({{ $item.id }})">完成</button>
+                </div>
+            </list-item>
+        </list>
+    </div>
+</div>

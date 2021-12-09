@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    flex-direction: column;
+}
+
+.box {
+    width: 100%;
+    height: 25%;
+    border-bottom: 2px solid white;
+    background-color: lemonchiffon;
+    border-radius: 50px;
+}
+
+.box_title {
+    width: 20%;
+    height: 100%;
+    text-align: start;
+    font-size: 23px;
+    color: white;
+}
+
+
+.todo-wrapper {
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.todo-item {
+    width: 100%;
+    height: 60px;
+    flex-direction: column;
+    border-bottom: 1px dashed lightgray;
+}
+
+.todo-title {
+    width: 100%;
+    height: 50px;
+    text-align: start;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.todo-content {
+    flex-direction: row;
+}
+
+.todo-date {
+    width: 70%;
+    height: 50px;
+    text-align: start;
+    font-size: 16px;
+}
+
+.todo-button {
+    width: 30%;
+    height: 50px;
+    text-align: start;
+    font-size: 16px;
+    background-color: wheat;
+}
+
+.dialogClass {
+    width: 100%;
+    height: 40%;
+    margin-start: 1%;
+    border-radius: 30px;
+}
+
+.dialogDiv {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+.dialogtext{
+    font-size: 30px;
+    color: lightslategrey;
+}
+.dialogbtn{
+    height: 60px;
+    width: 100px;
+    margin: 10px;
+    font-size: 25px;
+}

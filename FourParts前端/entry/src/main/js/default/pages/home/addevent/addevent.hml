@@ -1,0 +1,39 @@
+<!--xxx.hml -->
+<div class="container">
+    <div class="item-container"></div>
+
+<!--    代办事项-->
+    <div class="item-container">
+        <input class="input-text" type="text" value="{{ eventtitle }}" placeholder="输入事项(不超过十四个字)"
+               onchange="geteventTitle"></input>
+    </div>
+
+<!--    任务类型-->
+    <div class="item-container">
+        <text class="item-title">任务类型</text>
+        <select class="select" onchange="geteventType">
+            <option value="1" selected="true">很重要很紧急</option>
+            <option value="2">很重要不紧急</option>
+            <option value="3">不重要很紧急</option>
+            <option value="4">不重要不紧急</option>
+        </select>
+    </div>
+
+<!--    日期设置-->
+    <div class="item-container">
+        <text class="item-title">截至时间</text>
+        <div class="item-date">
+            <picker id="date" type="date" value="{{ deadline }}" onchange="getDate"></picker>
+        </div>
+    </div>
+
+<!--    备注-->
+    <textarea class="textarea" id="description" type="text" placeholder="事项说明" value="{{ description }}" onchange="getremark">
+    </textarea>
+
+
+<!--提交-->
+    <div class="button-container">
+        <input type="button" class="btn" onclick="onCreate()" value="创建"/>
+    </div>
+</div>

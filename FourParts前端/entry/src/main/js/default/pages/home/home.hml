@@ -1,0 +1,25 @@
+<element name="addevent" src="../home/addevent/addevent"></element>
+<element name="eventshow" src="../home/eventshow/eventshow"></element>
+<div class="container">
+
+    <tabs class="tabs" index="0" vertical="false" onchange="change">
+
+    <!--        不同标签栏对应的页面-->
+        <tab-content class="tabcontent" scrollable="false" style="margin-bottom : 10px;">
+            <div class="item-content">
+                <eventshow></eventshow>
+            </div>
+            <div>
+                <addevent></addevent>
+            </div>
+        </tab-content>
+
+    <!--底部标签栏-->
+        <tab-bar class="tab-bar" mode="fixed">
+            <div class="tab-bar-item" for="{{ item in mens }}">
+                <image class="tab-bar-item-img" src="{{ item.show ? item.srcClick : item.src }}"></image>
+                <text class="tab-text">{{ item.name }}</text>
+            </div>
+        </tab-bar>
+    </tabs>
+</div>

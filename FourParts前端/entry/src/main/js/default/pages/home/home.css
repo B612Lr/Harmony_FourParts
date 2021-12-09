@@ -1,0 +1,18 @@
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tab-bar{
+    height: 50px;
+}
+/*标签栏项目样式*/
+.tab-bar-item{
+    display: flex;
+    flex-direction: column;
+}
+/*标签栏图片样式*/
+.tab-bar-item-img{
+    height: 30px;
+    width: 30px;
+}
